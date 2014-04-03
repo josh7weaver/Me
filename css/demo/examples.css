@@ -99,7 +99,6 @@ section.demo * {
 section.demo {
 	font-size: 0;
 	text-align: center;
-	background-image: url("../img/example_bg_v.png");
 }
 section.demo.fullheight {
 	min-height: 100%;
@@ -110,7 +109,6 @@ section.demo.doublewidth, .spacer.doublewidth {
 .horizontal section.demo {
 	text-align: inherit;
 	white-space: nowrap;
-	background-image: url("../img/example_bg_h.png");
 }
 .horizontal section.demo.fullwidth {
 	min-width: 100%;
@@ -122,7 +120,6 @@ section.demo.doublewidth, .spacer.doublewidth {
 .spacer {
 	text-align: center;
 	min-height: 100px;
-	background-image: url("../img/example_bg_spacer_v.gif");
 }
 .spacer.s0 {
 	min-height: 1px;
@@ -161,7 +158,6 @@ section.demo.doublewidth, .spacer.doublewidth {
 	min-height: 100%;
 }
 .horizontal .spacer {
-	background-image: url("../img/example_bg_spacer_h.gif");
 	margin-bottom: 0;
 	min-height: initial;
 	min-width: 100px;

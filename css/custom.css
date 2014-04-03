@@ -1,0 +1,76 @@
+
+section#titlechart #description ol{
+	text-align: left;
+	max-width: 400px;
+	margin: 10px auto 10px auto;
+	white-space: normal;
+}
+section#titlechart #description ol {
+	list-style-position: outside;
+}
+section#titlechart #description {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	width: 600px;
+	height: 200px;
+	margin: -100px auto auto -300px;
+}
+section#titlechart #description h1 {
+	margin: 0;
+}
+section#titlechart #description h2 {
+	margin-bottom: 20px;
+}
+section#titlechart {
+	text-align: center;
+	position: relative;
+	height: 100%;
+	min-height: 500px;
+	min-width: 100%;
+}
+section.demo * {
+	font-size: 13px;
+}
+section.demo {
+	font-size: 0;
+	text-align: center;
+}
+
+/*
+	Elements
+*/
+.spacer {
+	text-align: center;
+	min-height: 100px;
+}
+.spacer.s_viewport {
+	min-height: 100%;
+}
+.spacer.s2 {
+	min-height: 200px;
+}
+.box1, .box2, .box3 {
+	display: inline-block;
+	position: relative;
+	border-radius: 8px;
+	text-align: center;
+	vertical-align: middle;
+}
+.box1 {
+	min-width: 100px;
+	height: 100px;
+	margin: 0 auto 0 auto;
+}
+.box2 {
+	min-width: 50px;
+	height: 50px;
+	margin: 25px auto 25px auto;
+}
+
+/*
+Colors
+*/
+.skin {
+	background-color: #ED9F4C;
+}
