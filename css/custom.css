@@ -1,4 +1,45 @@
+/*
+	GENERAL
+*/
+body,
+html,
+#wrapper
+{
+	height: 100%;
+	/* #wrapper must be 100% so innerards can be whole frame tall if they want */
+}
+.relative{
+	position: relative;
+}
 
+/*
+	SIDEBAR
+*/
+#sidebar{
+	position: fixed;
+	width: 200px;
+	left: 20px;
+	top: 20%;
+}
+
+
+/*
+	SECIONS
+*/
+section.demo * {
+	font-size: 13px;
+}
+section.demo {
+	font-size: 0;
+	text-align: center;
+}
+section#titlechart {
+	text-align: center;
+	position: relative;
+	height: 75%;
+	min-height: 500px;
+	min-width: 100%;
+}
 section#titlechart #description ol{
 	text-align: left;
 	max-width: 400px;
@@ -22,34 +63,56 @@ section#titlechart #description h1 {
 section#titlechart #description h2 {
 	margin-bottom: 20px;
 }
-section#titlechart {
-	text-align: center;
-	position: relative;
-	height: 100%;
-	min-height: 500px;
-	min-width: 100%;
-}
-section.demo * {
-	font-size: 13px;
-}
-section.demo {
-	font-size: 0;
-	text-align: center;
-}
 
 /*
-	Elements
+	SPACING ELEMENTS
+
+	These classes just help to space out the scrolling.
+	Apply to a div to add proper spacing
 */
 .spacer {
 	text-align: center;
 	min-height: 100px;
 }
-.spacer.s_viewport {
-	min-height: 100%;
+.spacer.s0 {
+	min-height: 1px;
+}
+.spacer.s1 {
+	min-height: 100px;
 }
 .spacer.s2 {
 	min-height: 200px;
 }
+.spacer.s3 {
+	min-height: 300px;
+}
+.spacer.s4 {
+	min-height: 400px;
+}
+.spacer.s5 {
+	min-height: 500px;
+}
+.spacer.s6 {
+	min-height: 600px;
+}
+.spacer.s7 {
+	min-height: 700px;
+}
+.spacer.s8 {
+	min-height: 800px;
+}
+.spacer.s9 {
+	min-height: 900px;
+}
+.spacer.s10 {
+	min-height: 1000px;
+}
+.spacer.s_viewport {
+	min-height: 100%;
+	min-width: 100%;
+	/* This class is used to make sure the scroll "start" can reache the trigger*/
+}
+
 .box1, .box2, .box3 {
 	display: inline-block;
 	position: relative;
@@ -69,8 +132,43 @@ section.demo {
 }
 
 /*
-Colors
+	COLORS
 */
 .skin {
 	background-color: #ED9F4C;
+}
+.blue {
+	background-color: #3883d8;
+}
+
+/*
+	FOR TESTING ONLY
+*/
+.fish {
+	min-width: 500px;
+}
+
+#parallax{
+	margin-bottom: 250px;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+}
+
+#parallax #parallaxbg {
+	position: absolute;
+	height: 300px;
+	top: 50%;
+	width: 100%;
+	margin-top: -150px;
+	background-image: url("../scrollmagic/img/demo_parallax_bg.png");
+}
+#parallax h3 {
+	font-size: 80px;
+	text-align: center;
+	margin: -40px 0 0 0;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	line-height: 80px;
 }

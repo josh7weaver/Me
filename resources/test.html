@@ -8,7 +8,7 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/custom.css" type="text/css">
+  <link rel="stylesheet" href="css/demo/examples.css" type="text/css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,33 +19,21 @@
 
 
   <!-- INCLUDE SCRIPTS BELOW THIS LINE -->
-  <!-- JQUERY & TWEENMAX 
-  -->
+  <!-- JQUERY & TWEENMAX -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-  <!-- SCROLLMAGIC JS 
-  -->
+  <!-- SCROLLMAGIC JS -->
     <script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
     <script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
 
-  <!-- Include all compiled plugins (below), or include individual files as needed 
-  -->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/myscript.js"></script>
 </head>
-<body class="relative">
-  
-  <div id="message" class="hide alert alert-warning">
-    This site is not optimized for viewports less than 800px wide!
-  </div>
-
-  <div id="sidebar">
-    <h1>Joshua Weaver</h1>
-    <i class="show">A little bit about me...</i>
-  </div>
-
-  <div id="wrapper" class="relative">
+<body>
+ 
+  <div class="scrollContent">
       
       <section id="titlechart">
         <div id="description">
@@ -58,68 +46,33 @@
         </div>
       </section> <!-- #titlechart -->
 
-
       <section class="demo">
         <div class="spacer s2"></div>
         <div id="trigger1" class="spacer s0"></div>
-        <div id="animate1" class="element box2 skin">
+        <div id="animate1" class="box2 skin">
           <p>You wouldn't like me, when I'm angry!</p>
+          <a href="#" class="viewsource">view source</a>
         </div>
         <div class="spacer s2"></div>
       </section> <!-- .demo -->
 
+      <!-- 
+      .demo -->
       <section class="demo">
-        <div class="spacer s2"></div>
-        <div id="trigger2" class="spacer s0"></div>
-        <div id="animate2" class="element box2 skin">
-          <p>You wouldn't like me, when I'm angry!</p>
+        <div class="spacer s1"></div>
+        <div id="trigger2" class="spacer s1"></div>
+        <div class="spacer s0"></div>
+        <div id="animate2" class="box1 black">
+          <p>Smurf me!</p>
+          <a href="#" class="viewsource">view source</a>
         </div>
         <div class="spacer s2"></div>
-      </section> <!-- .demo -->
-
-      <section class="demo">
-        <div class="spacer s2"></div>
-        <div id="trigger3" class="spacer s0"></div>
-        <div id="animate3" class="element box2 skin">
-          <p>You wouldn't like me, when I'm angry!</p>
-        </div>
-        <div class="spacer s2"></div>
-      </section> <!-- .demo -->
-
-      <section class="demo">
-        <div class="spacer s2"></div>
-        <div id="trigger4" class="spacer s0"></div>
-        <div id="animate4" class="element box2 skin">
-          <p>You wouldn't like me, when I'm angry!</p>
-        </div>
-        <div class="spacer s2"></div>
-      </section> <!-- .demo -->
-
-      <section class="demo">
-        <div class="spacer s2"></div>
-        <div id="trigger5" class="spacer s0"></div>
-        <div id="animate5" class="box2 blue">
-          <p>I caught a fish THIS big.</p>
-        </div>
-        <div class="spacer s5"></div>
-      </section> <!-- .demo -->
-
-      <section id="parallax">
-        <div id="parallaxbg">
-          <div class="top"></div>
-          <div class="bottom"></div>
-        </div>
-        <h3>parallax</h3>
-        <h3 id="big">parallax</h3>
       </section>
 
 
-
-
-      <!-- 
-      -->
       <div class="spacer s_viewport"></div>
 
   </div><!-- .scrollContent -->
+
 </body>
 </html>
