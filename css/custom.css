@@ -10,7 +10,6 @@ html,
 }
 body{
 	background: url(../img/wood4.jpg) center center no-repeat fixed;
-	color: snow;
 }
 .relative{
 	position: relative;
@@ -24,28 +23,39 @@ body{
 	width: 20%;
 	left: 5%;
 	top: 18%;
+	color: snow;
 }
 #wrapper{
 	left: 25%;
 	width: 75%;
+	color: snow;
 }
 
 
 /*
 	SECIONS
 */
-section.experience{
+section.experience,
+.year{
 	width:75%;
 	margin: 0 auto;
+	clear: both;
 }
 
 /*
 	CONTENT
 */
 .year{
-	width: 100%;
 	text-align: center;
 }
+
+/*
+	LAYOUT
+*/
+.center{
+	text-align: center;
+}
+
 
 /*
 	SPACING ELEMENTS
