@@ -8,60 +8,43 @@ html,
 	height: 100%;
 	/* #wrapper must be 100% so innerards can be whole frame tall if they want */
 }
+body{
+	background: url(../img/wood4.jpg) center center no-repeat fixed;
+	color: snow;
+}
 .relative{
 	position: relative;
 }
 
 /*
-	SIDEBAR
+	CONTAINERS
 */
 #sidebar{
 	position: fixed;
-	width: 200px;
-	left: 20px;
-	top: 20%;
+	width: 20%;
+	left: 5%;
+	top: 18%;
+}
+#wrapper{
+	left: 25%;
+	width: 75%;
 }
 
 
 /*
 	SECIONS
 */
-section.demo * {
-	font-size: 13px;
+section.experience{
+	width:75%;
+	margin: 0 auto;
 }
-section.demo {
-	font-size: 0;
+
+/*
+	CONTENT
+*/
+.year{
+	width: 100%;
 	text-align: center;
-}
-section#titlechart {
-	text-align: center;
-	position: relative;
-	height: 75%;
-	min-height: 500px;
-	min-width: 100%;
-}
-section#titlechart #description ol{
-	text-align: left;
-	max-width: 400px;
-	margin: 10px auto 10px auto;
-	white-space: normal;
-}
-section#titlechart #description ol {
-	list-style-position: outside;
-}
-section#titlechart #description {
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	width: 600px;
-	height: 200px;
-	margin: -100px auto auto -300px;
-}
-section#titlechart #description h1 {
-	margin: 0;
-}
-section#titlechart #description h2 {
-	margin-bottom: 20px;
 }
 
 /*
@@ -112,63 +95,16 @@ section#titlechart #description h2 {
 	min-width: 100%;
 	/* This class is used to make sure the scroll "start" can reache the trigger*/
 }
-
-.box1, .box2, .box3 {
-	display: inline-block;
-	position: relative;
-	border-radius: 8px;
-	text-align: center;
-	vertical-align: middle;
-}
-.box1 {
-	min-width: 100px;
-	height: 100px;
-	margin: 0 auto 0 auto;
-}
-.box2 {
-	min-width: 50px;
-	height: 50px;
-	margin: 25px auto 25px auto;
+.spacer.s25p {
+	min-height: 25%;
 }
 
 /*
 	COLORS
 */
-.skin {
-	background-color: #ED9F4C;
-}
-.blue {
-	background-color: #3883d8;
-}
-
 /*
-	FOR TESTING ONLY
-*/
-.fish {
-	min-width: 500px;
-}
-
-#parallax{
-	margin-bottom: 250px;
-	position: relative;
-	overflow: hidden;
-	height: 100%;
-}
-
-#parallax #parallaxbg {
-	position: absolute;
-	height: 300px;
-	top: 50%;
-	width: 100%;
-	margin-top: -150px;
-	background-image: url("../scrollmagic/img/demo_parallax_bg.png");
-}
-#parallax h3 {
-	font-size: 80px;
-	text-align: center;
-	margin: -40px 0 0 0;
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	line-height: 80px;
-}
+<p class="bg-primary">...</p>
+<p class="bg-success">...</p>
+<p class="bg-info">...</p>
+<p class="bg-warning">...</p>
+<p class="bg-danger">...</p>

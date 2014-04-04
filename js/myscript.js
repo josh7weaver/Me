@@ -6,57 +6,46 @@ $(document).ready(function($) {
   /* INITIALIZE THE SCROLLMAGIC CONTROLLER */
   /*****************************************/
     // init controller
-    controller = new ScrollMagic({loglevel: 3});
-
+    controller = new ScrollMagic();//{loglevel: 3});
 
   /***************************************/
   /* THIS FUNCTION BUILDS THE ZOOM EFFECT*/
   /***************************************/
 
     // build tweens
-    var tween1 = TweenMax.to("#animate1", 0.5, {backgroundColor: "green", scale: 2.5});
+    var tween_entry = TweenMax.to("#animate1", 0.5, {backgroundColor: "green", scale: 2.5});
     var tween2 = TweenMax.to("#animate2", 0.5, {backgroundColor: "yellow", scale: 2.5});
-    var tween3 = TweenMax.to("#animate3", 0.5, {backgroundColor: "red", scale: 2.5});
-    var tween4 = TweenMax.to("#animate4", 0.5, {backgroundColor: "purple", scale: 2.5});
-    var tween5 = TweenMax.to("#animate5", 1, {className: "+=fish"});
-    var tween6 = new TimelineMax ()
-      .add([
-        TweenMax.fromTo("#parallaxText .layer1", 1, {scale: 3, autoAlpha: 0.1, top: 300}, {top: -350, ease: Linear.easeNone}),
-        TweenMax.fromTo("#parallaxText .layer2", 1, {scale: 2, autoAlpha: 0.3, top: 150}, {top: -175, ease: Linear.easeNone})
-      ]);
+    var tween_exit = TweenMax.to("#animate1", 0.5, {scale: 1});
 
-    
+    /*
+    this will need to be .trigger and .trigger_exit
+    */
     // build SCENES
     var scene1 = new ScrollScene({triggerElement: "#trigger1", duration: 300})
         .setPin("#animate1")
-        .addTo(controller);
+        .addTo(controller)
+        .addIndicators();
     
     var scene1a = new ScrollScene({triggerElement: "#trigger1"})
-        .setTween(tween1)
-        .addTo(controller);
+        .setTween( tween_entry )
+        .addTo(controller)
+        .addIndicators();
 
+    new ScrollScene({
+        triggerElement: "#trigger1_exit",
+        duration:300
+    })
+      .addTo(controller)
+      .setTween( tween_exit )
+      .addIndicators(); 
+
+
+    //MAY NOT NEED THESE
     var scene2 = new ScrollScene({triggerElement: "#trigger2"})
         .setTween(tween2)
-        .addTo(controller);
-    
-    var scene3 = new ScrollScene({triggerElement: "#trigger3"})
-        .setTween(tween3)
-        .addTo(controller);
-    
-    var scene4 = new ScrollScene({triggerElement: "#trigger4"})
-        .setTween(tween4)
-        .addTo(controller);
-
-    var scene5 = new ScrollScene({triggerElement: "#trigger5", duration: 200, offset: -50})
-        .setTween(tween5)
-        .addTo(controller);
-/*
-    var scene6 = new ScrollScene({triggerElement: "#trigger6", duration: 400})
-        .setTween(tween6)
-        .addTo(controller);
-*/
-
-
+        .addTo(controller)
+        .addIndicators();
+  
     // parallax
     new ScrollScene({
       triggerElement: "section#parallax",
@@ -73,18 +62,12 @@ $(document).ready(function($) {
       )
       .addIndicators();
 
+      
+    
+    // add listeners
+    
 
 
-
-    // show indicators (requires debug extension)
-    scene1.addIndicators();
-    scene2.addIndicators();
-    scene3.addIndicators();
-    scene4.addIndicators();
-    scene5.addIndicators();
-    scene6.addIndicators();
-
-  
   /************************/
   /*    OTHER FUNCTIONS   */
   /************************/
