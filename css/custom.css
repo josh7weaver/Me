@@ -35,6 +35,12 @@ body{
 /*
 	SECIONS
 */
+section.experience{
+	background-color: rgba(0,0,0, 0.62);
+	padding: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
 section.experience,
 .year{
 	width:75%;
@@ -47,6 +53,15 @@ section.experience,
 */
 .year{
 	text-align: center;
+}
+
+#wrapper img{
+	margin-right: 15px;
+}
+
+#wrapper h2{
+	margin-top: 10px;
+	color: snow;
 }
 
 /*
@@ -106,6 +121,9 @@ section.experience,
 	/* This class is used to make sure the scroll "start" can reache the trigger*/
 }
 .spacer.s25p {
+	min-height: 25%;
+}
+.spacer.s50p {
 	min-height: 25%;
 }
 
