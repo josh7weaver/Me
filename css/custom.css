@@ -16,6 +16,25 @@ body{
 }
 
 /*
+	FONTS
+*/
+h1,h2,h3{ font-family: 'Lobster', Georgia, Times, serif; }
+h1{
+    font-size: 70px;
+    line-height: 85px;
+}
+h2,h3{
+    font-size: 45px;
+	line-height: 60px;
+	margin-bottom: .75em;
+}
+p,.year span{
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+/*
 	CONTAINERS
 */
 #sidebar{
@@ -36,9 +55,14 @@ body{
 	SECIONS
 */
 section.experience{
-	background-color: rgba(0,0,0, 0.62);
 	padding: 10px;
-	border-radius: 10px;
+	/*
+	background-color: rgba(0,0,0, 0.62);
+	border-radius: 2px;
+	box-shadow: 1px 2px 1px #d1d1d1;
+	*/
+}
+section.experience div.outer{
 	overflow: hidden;
 }
 section.experience,
@@ -63,14 +87,28 @@ section.experience,
 	margin-top: 10px;
 	color: snow;
 }
-
+content {
+	font-style: italic;
+}
+.list-group-item{
+	background-color: #3F3F3F;
+	cursor: pointer;
+}
+#filterHeader{
+	cursor: pointer;
+}
 /*
 	LAYOUT
 */
 .center{
 	text-align: center;
 }
-
+.clear{
+	clear:both;
+}
+.bold{
+	font-weight: bold;
+}
 
 /*
 	SPACING ELEMENTS
@@ -120,7 +158,7 @@ section.experience,
 	min-width: 100%;
 	/* This class is used to make sure the scroll "start" can reache the trigger*/
 }
-.spacer.s25p {
+.spacer.s20p {
 	min-height: 25%;
 }
 .spacer.s50p {
@@ -130,6 +168,7 @@ section.experience,
 /*
 	COLORS
 */
+
 /*
 <p class="bg-primary">...</p>
 <p class="bg-success">...</p>
