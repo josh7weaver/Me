@@ -3,7 +3,8 @@
 */
 body,
 html,
-#wrapper
+#wrapper,
+#wrapperInner
 {
 	height: 100%;
 	/* #wrapper must be 100% so innerards can be whole frame tall if they want */
@@ -11,34 +12,16 @@ html,
 body{background-color: black;}
 div#background-image{
 	background: url(../img/wood4.jpg) center center no-repeat fixed;
-	opacity: .5;
+	opacity: .8;
 	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
+	z-index: -10;
 }
 .relative{
 	position: relative;
-}
-
-/*
-	FONTS
-*/
-h1,h2,h3{ font-family: 'Lobster', Georgia, Times, serif; }
-h1{
-    font-size: 70px;
-    line-height: 85px;
-}
-h2,h3{
-    font-size: 45px;
-	line-height: 60px;
-	margin-bottom: .75em;
-}
-p,.year span{
-	font-family: 'Cabin', Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    line-height: 28px;
 }
 
 /*
@@ -56,6 +39,54 @@ p,.year span{
 	width: 75%;
 	color: snow;
 }
+#wrapperInner{
+	width:75%;
+	margin: 0 auto;
+}
+#overlay{
+	z-index: -1;
+	height: 100%;
+	width: 75%;
+	left: 25%;
+	position: fixed;
+}
+#overlay div{
+	background-color: rgba(0,0,0,.5);
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+}
+
+/*
+	FONTS
+*/
+h1,h2,h3{ font-family: 'Open Sans', sans-serif; }
+h1{
+    font-size: 70px;
+    line-height: 85px;
+    font-weight: 600;
+}
+h2{
+    font-size: 45px;
+	line-height: 50px;
+	margin-bottom: .75em;
+    font-weight: 600;
+}
+h3{
+	font-size: 30px;
+}
+p,.year span{
+	font-family: 'Merriweather', serif;;
+    font-size: 14px;
+    line-height: 22px;
+    color:rgb(218, 218, 218);
+}
+p:first-line{
+	font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
 
 
 /*
@@ -63,28 +94,24 @@ p,.year span{
 */
 section.experience{
 	padding: 10px;
+	overflow: hidden;
 	/*
 	background-color: rgba(0,0,0, 0.62);
 	border-radius: 2px;
 	box-shadow: 1px 2px 1px #d1d1d1;
 	*/
 }
-section.experience div.outer{
-	overflow: hidden;
-}
 section.experience,
 .year{
-	width:75%;
-	margin: 0 auto;
 	clear: both;
+}
+.year{
+	padding: 10px;
 }
 
 /*
 	CONTENT
 */
-.year{
-	text-align: center;
-}
 
 #wrapper img{
 	margin-right: 15px;
