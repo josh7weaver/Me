@@ -110,7 +110,7 @@ h3{
     color: snow;
 	text-shadow: 1px 1px 16px black;
 }
-p:first-line{
+.experience p:first-line{
 	font-size: 20px;
     line-height: 28px;
     font-weight: bold;

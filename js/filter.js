@@ -22,12 +22,12 @@ $(document).ready(function($) {
 
 		if(element_class_to_show) //if they didn't click SHOW ALL
 		{ 
-			$('.experience, .year').hide();
+			$('.experience, .year, .title').hide();
 			$(element_class_to_show).show();
 		}
 		else	// clicked SHOW ALL, so show everything
 		{ 
-			$('.experience, .year').show();
+			$('.experience, .year, .title').show();
 		}
 	});
 
