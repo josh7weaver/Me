@@ -32,11 +32,38 @@ $(document).ready(function($) {
 	});
 
 	$('#filterHeader').click(function(event) {
-		$('#filterList').toggleClass('hide');
-		$('#filterHelperMessage').toggleClass('hide');
+		
+		// SHOW/HIDE the filters
+		if($('#filterList').is(':visible'))	// its visible, so HIDE it
+		{
+			$('#filterList').fadeOut("fast");
+			$('#filterHelperMessage').fadeOut("fast");
+		}
+		else	// it's hidden, SHOW IT
+		{
+			$('#filterList').fadeIn("slow");
+			$('#filterHelperMessage').fadeIn("slow");
+		}
+
+		// Toggle up/down arrow
 		$('#filterHeader span')
 			.toggleClass('glyphicon-circle-arrow-up')
 			.toggleClass('glyphicon-circle-arrow-down');
+		
+		// Animate in/out the content
+		//console.log("hitting animate. Height is: " + $('#info').height())
+		$('#info').animate({
+			height: "toggle",
+			opacity: "toggle"
+		}, 800);
 	});
 
+
+	$("#filterList li, #filterHeader").hover(function() {
+		/* Stuff to do when the mouse enters the element */
+		$(this).addClass("hover");
+	}, function() {
+		/* Stuff to do when the mouse leaves the element */
+		$(this).removeClass("hover");
+	});
 });

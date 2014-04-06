@@ -48,8 +48,8 @@
 
   <!-- SIDEBAR -->
   <div id="sidebar">  <!-- The sidebar and filter -->
-    <img src="img/face.jpg" class="img-responsive img-circle" alt="Responsive image">
-    <div class="center">
+    <div class="center" id="info">
+    <img id="profileImg" src="img/face.jpg" class="img-responsive img-circle" alt="Responsive image">
       <h1>Joshua Weaver</h1>
       <i class="show">A little bit about me...</i>
     </div>
@@ -57,12 +57,12 @@
     <div class="center" id="filterBox">
       <div class="title">
         <h4 id="filterHeader" class="bold">FILTER <span class="glyphicon glyphicon-circle-arrow-up"></span></h4>
-        <h6 id="filterHelperMessage" class="bold hide">...by Technology Used:</h6>
+        <h6 id="filterHelperMessage" class="bold">...by Technology Used:</h6>
       </div>
       <!-- Add carat image -->
 
-      <ul id="filterList" class="list-group hide">
-        <li class="list-group-item">Show all</li>
+      <ul id="filterList" class="list-group">
+        <li class="list-group-item active">Show all</li>
         <li data-class=".php" class="list-group-item">PHP</li>
         <li data-class=".html,.css" class="list-group-item">HTML/CSS</li>
         <li data-class=".expressionengine" class="list-group-item">Expression Engine</li>
@@ -84,6 +84,15 @@
   <div id="wrapper" class="relative">
 
       <div class="spacer s1"></div>
+        <section id="box1" class="experience"> <!-- CoverItOnline.com -->
+          
+          <blockquote>
+            <p>"I've traveled life, had my share man,<br /> I've been everywhere..."</p>
+            <footer>Johnny Cash '73</footer>
+          </blockquote>
+      
+        </section>
+
       <div class="year html css php"><h3>2006</h3></div>
 
         <section id="box1" class="experience html css php"> <!-- CoverItOnline.com -->

@@ -8,19 +8,28 @@ html,
 	height: 100%;
 	/* #wrapper must be 100% so innerards can be whole frame tall if they want */
 }
-body{background-color: black;}
-div#background-image{
+body{
+	background-color: black;
+	background: url(../img/sky.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+div#background-image{ /* ONLY NEED THIS IF IMG IS TRANSPARENT*/
+	/*
 	background: url(https://s3.amazonaws.com/ooomf-com-files/4iDnRbhRayDf4Y5461Z9_Caroline%20Gutman-7248.jpg) right bottom no-repeat fixed;
 	background: url(https://s3.amazonaws.com/ooomf-com-files/ScZOGH4mSPSymlgYxwbn_reef%20insp-80.jpg) center center no-repeat fixed;
 	background: url(https://s3.amazonaws.com/ooomf-com-files/QSTuECF6S9mZ1CBm9cog_DSC07753.jpg) center center no-repeat fixed;
-	background: url(../img/wood4.jpg) center center no-repeat fixed;
-	opacity: .8;
+	opacity: 0;
+	*/
 	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
 	z-index: -10;
+	/*background-color: rgba(0,0,0,.1);*/
 }
 .relative{
 	position: relative;
@@ -31,7 +40,7 @@ div#background-image{
 */
 #sidebar{
 	position: fixed;
-	width: 20%;
+	width: 25%;
 	left: 5%;
 	top: 18%;
 	color: snow;
@@ -51,11 +60,11 @@ div#background-image{
 	position: fixed;
 }
 #overlay div{
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0,0,0,.4);
 	width: 80%;
 	margin: 0 auto;
 	height: 100%;
-	display: none;
+	/*display: none;*/
 }
 
 /*
@@ -69,7 +78,7 @@ div#background-image{
 	padding: 10px;
 }
 .experience{
-	background-color: rgba(0, 0, 0, 0.69);
+	/*background-color: rgba(0, 0, 0, 0.69);*/
 	margin-bottom: 40px;
 }
 /*
@@ -80,21 +89,26 @@ h1{
     font-size: 70px;
     line-height: 85px;
     font-weight: 600;
+    text-shadow: 3px 3px 6px black;
 }
 h2{
     font-size: 45px;
 	line-height: 50px;
 	margin-bottom: .75em;
-    font-weight: 600;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px black;
 }
 h3{
 	font-size: 30px;
 }
-p,.year span{
+.experience,
+.year span{
 	font-family: 'Merriweather', serif;;
-    font-size: 14px;
-    line-height: 22px;
-    color:rgb(218, 218, 218);
+    font-size: 15px;
+	line-height: 20px;
+    /*color:rgb(233, 221, 221);*/
+    color: snow;
+	text-shadow: 1px 1px 16px black;
 }
 p:first-line{
 	font-size: 20px;
@@ -117,12 +131,28 @@ content {
 	font-style: italic;
 }
 .list-group-item{
-	background-color: #3F3F3F;
+	background-color: transparent;
 	cursor: pointer;
 }
 #filterHeader{
 	cursor: pointer;
 }
+#filterList,
+#filterHelperMessage{
+	display: none;
+}
+#filterList li.active{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+#filterList li.hover,
+#filterHeader.hover{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#profileImg{
+	width: 60%;
+	margin: 0 auto;
+}
+
 /*
 	LAYOUT
 */
