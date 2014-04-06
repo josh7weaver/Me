@@ -1,4 +1,6 @@
 # ignore stuff in ignore folder
-img/ignore
-css/ignore
-ignore
+# img/ignore
+# css/ignore
+# ignore
+
+*ignore*
