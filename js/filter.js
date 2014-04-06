@@ -1,5 +1,21 @@
 $(document).ready(function($) {
 
+	/*
+		DOCUMENT WIDTH LISTNER
+	*/
+	$(window).resize(function(event) {
+      // Show warning message if viewport is too small
+      if($(window).width() < 800){
+        $('#message').removeClass('hide')
+      }else{
+        $('#message').addClass('hide')
+      }
+    }).resize(); //last .resize is to trigger the event on page load once
+
+
+	/*
+		CLICK LISTENERS FOR FILTER
+	*/
 	$('#filterList').click(function(event){
 
 		var element_class_to_show = $(event.target).data("class");

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joshua Weaver</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/customTest.css" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+
+  <!-- INCLUDE SCRIPTS BELOW THIS LINE -->
+  <!-- JQUERY & TWEENMAX 
+  -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  <!-- SCROLLMAGIC JS 
+  -->
+    <script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed 
+  -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/test.js"></script>
+</head>
+<style>
+.box{
+	position: relative;
+	width: 50%;
+	/*height: 50%;*/
+	margin: 0 auto;
+	background-color: yellow;
+}
+#wrapper{
+	margin-left: 25%;
+	width: 75%;
+	padding-left: 10px;
+	background-color: #BFC4FC;
+}
+.spacer.s_viewport{
+	text-align: center;
+	min-height: 100%;
+	min-width: 100%;
+}
+.spacer.s0 {
+	min-height: 1px;
+}
+h1{ background-color: grey;}
+</style>
+<body class="relative">
+  <div id="wrapper" class="relative">
+     
+     <div id="thingToPin" class="box">
+     	<h1>THIS IS THE TITLE</h1>
+     	<p>THIS IS SOME PARAGRAPH TEXT</p>
+     </div>
+
+     <div id="thingToPin2" class="box">
+     	<h1>THIS IS THE TITLE2</h1>
+     	<p>THIS IS SOME PARAGRAPH TEXT MORE</p>
+     </div>
+
+      <!-- 
+      -->
+      <div class="spacer s_viewport"></div>
+
+  </div><!-- .scrollContent -->
+</body>
+</html>

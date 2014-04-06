@@ -3,14 +3,16 @@
 */
 body,
 html,
-#wrapper,
-#wrapperInner
+#wrapper
 {
 	height: 100%;
 	/* #wrapper must be 100% so innerards can be whole frame tall if they want */
 }
 body{background-color: black;}
 div#background-image{
+	background: url(https://s3.amazonaws.com/ooomf-com-files/4iDnRbhRayDf4Y5461Z9_Caroline%20Gutman-7248.jpg) right bottom no-repeat fixed;
+	background: url(https://s3.amazonaws.com/ooomf-com-files/ScZOGH4mSPSymlgYxwbn_reef%20insp-80.jpg) center center no-repeat fixed;
+	background: url(https://s3.amazonaws.com/ooomf-com-files/QSTuECF6S9mZ1CBm9cog_DSC07753.jpg) center center no-repeat fixed;
 	background: url(../img/wood4.jpg) center center no-repeat fixed;
 	opacity: .8;
 	position: fixed;
@@ -35,14 +37,12 @@ div#background-image{
 	color: snow;
 }
 #wrapper{
-	left: 25%;
+	margin-left: 25%;
 	width: 75%;
+	/*background-color: green;*/
 	color: snow;
 }
-#wrapperInner{
-	width:75%;
-	margin: 0 auto;
-}
+
 #overlay{
 	z-index: -1;
 	height: 100%;
@@ -55,8 +55,23 @@ div#background-image{
 	width: 80%;
 	margin: 0 auto;
 	height: 100%;
+	display: none;
 }
 
+/*
+	SECIONS
+*/
+.experience,
+.year
+{
+	margin: 0 auto;
+	width: 75%;
+	padding: 10px;
+}
+.experience{
+	background-color: rgba(0, 0, 0, 0.69);
+	margin-bottom: 40px;
+}
 /*
 	FONTS
 */
@@ -86,29 +101,6 @@ p:first-line{
     line-height: 28px;
     font-weight: bold;
 }
-
-
-
-/*
-	SECIONS
-*/
-section.experience{
-	padding: 10px;
-	overflow: hidden;
-	/*
-	background-color: rgba(0,0,0, 0.62);
-	border-radius: 2px;
-	box-shadow: 1px 2px 1px #d1d1d1;
-	*/
-}
-section.experience,
-.year{
-	clear: both;
-}
-.year{
-	padding: 10px;
-}
-
 /*
 	CONTENT
 */

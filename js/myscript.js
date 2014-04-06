@@ -21,7 +21,7 @@ $(document).ready(function($) {
     this will need to be .trigger and .trigger_exit
     */
     // build SCENES
-    var scene1 = new ScrollScene({triggerElement: "#trigger1", duration: 300})
+    var scene1 = new ScrollScene({triggerElement: "#trigger1", duration: 800})
         .setPin("#animate1")
         .addTo(controller)
         .addIndicators();
@@ -90,5 +90,3 @@ var tween = TweenMax.fromTo("#animate2", 0.5,
     {"border-top": "0px solid white"},
     {"border-top": "30px solid white", backgroundColor: "blue", scale: 0.7}
   );
-
-

@@ -31,8 +31,8 @@
     <script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
 
   <!-- Include all compiled plugins (below), or include individual files as needed 
-    <script type="text/javascript" src="js/myscript.js"></script>
   -->
+    <script type="text/javascript" src="js/scroll.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/filter.js"></script>
 </head>
@@ -77,24 +77,21 @@
 
   <!-- MAIN CONTENT -->
   <div id="overlay"><!-- To show the dark overlay -->
-    <div></div>
+    <div>
+    </div>
   </div>
   
   <div id="wrapper" class="relative">
-    <div id="wrapperInner" class="relative">
 
-      
-      <div class="spacer s20p"></div>
-
+      <div class="spacer s1"></div>
       <div class="year html css php"><h3>2006</h3></div>
 
-        <section class="experience html css php"> <!-- CoverItOnline.com -->
+        <section id="box1" class="experience html css php"> <!-- CoverItOnline.com -->
           
-              <h2>Ecommerce Site: Coveritonline.com</h2>
-              <p>Gary Alberts needed to sell his truck covers online. Armed with one web design class, I decided that Ecommerce shouldn't be a big deal. I was wrong. Although I had learned the basics of HTML/CSS in my web design course, the shopping cart solution I decided to implement for the site was written in PHP, and the learning curve was sharp, but I managed to get everything working, from tweaking the theme to registering SSL certs. whew!</p>
-            
+          <h2>Ecommerce Site: Coveritonline.com</h2>
+          <p>Gary Alberts needed to sell his truck covers online. Armed with one web design class, I decided that Ecommerce shouldn't be a big deal. I was wrong. Although I had learned the basics of HTML/CSS in my web design course, the shopping cart solution I decided to implement for the site was written in PHP, and the learning curve was sharp, but I managed to get everything working, from tweaking the theme to registering SSL certs. whew!</p>
+      
         </section>
-        <div class="spacer s_viewport"></div>
 
 
       <div class="year actionscript"> <!-- 2008 -->
@@ -105,19 +102,18 @@
           </span>
       </div>
 
-        <section class="experience actionscript"> <!-- White Rose Gallery -->
+        <section id="box2" class="experience actionscript"> <!-- White Rose Gallery -->
           
               <h2>Flash: parsing XML content via ActionScript</h2>
               <img src="img/whiteRose.png" alt="White Rose Gallery" class="img-thumbnail pull-left">
               <p>The White Rose Gallery is the internet home of a portfolio/informational site for Sandy and Becky, artists in Charlotte. They needed an inexpensive presence on the web that they could update. So, I modified a flash template to suit her needs. Since she needed to be able to update the page herself, I used actionscript to pull in the content from a file, which allows her to update the flash template by simply editing a text file. The design is horid, but the code works! Its still running at <em>http://thewhiterosegallery.com/</em>
               </p>
-
             
         </section>
 
       <div class="year html css joomla php"><h3>2009</h3></div>
 
-        <section class="experience html css"> <!-- Apex and Creative Hearts -->
+        <section id="box3" class="experience html css"> <!-- Apex and Creative Hearts -->
           
               <h2>Honing CSS with Small Sites</h2>
               <img src="img/creativeHearts.png" alt="Creative Hearts" class="img-thumbnail pull-left">
@@ -126,7 +122,7 @@
             
         </section>
 
-        <section class="experience html css joomla php"> <!-- Zao -->
+        <section id="box4" class="experience html css joomla php"> <!-- Zao -->
           
               <h2>Zao Water: A Joomla Website</h2>
               <img src="img/zao.png" alt="Zao Water" class="img-thumbnail pull-left">
@@ -138,7 +134,7 @@
 
       <div class="year html css wordpress php jquery"><h3>2010</h3></div>
 
-        <section class="experience html css wordpress php jquery"> <!-- Kingsway, FFC, and CSS -->
+        <section id="box5" class="experience html css wordpress php jquery"> <!-- Kingsway, FFC, and CSS -->
           
               <h2>Churches love Wordpress</h2>
               <img src="img/wp-sm.png" alt="Wordpress" class="pull-left">
@@ -162,7 +158,7 @@
 
       <div class="year actionscript"><h3>2011</h3></div>
 
-        <section class="experience actionscript"> <!-- Proj mgmt for Tres.com flash -->
+        <section id="box6" class="experience actionscript"> <!-- Proj mgmt for Tres.com flash -->
           
               <h2>Managing Flash Dev for Tresemme</h2>
               <img src="img/tresemme.jpg" alt="Wordpress" class="pull-left">
@@ -174,13 +170,14 @@
                   <li>Making sure Adam knew the requirements</li>
                  </ul>
               <br />
-              I really enjoyed this work. So much in fact, that I soon got a promotion! (more on that next)</p>
+              I really enjoyed this work. So much in fact, that I soon got a promotion! (more on that next)
+            </p>
             
         </section>
 
       <div class="year html css jquery expressionengine"><h3>2012</h3></div>
 
-        <section class="experience"> <!-- project mgmt for Production Work on TRES -->
+        <section id="box7" class="experience"> <!-- project mgmt for Production Work on TRES -->
           
               <h2>I Stage a Hostile Takeover of Project Management</h2>
               <p>
@@ -197,7 +194,7 @@
             
         </section>
 
-        <section class="experience html css jquery"> <!-- KIT -->
+        <section id="box8" class="experience html css jquery"> <!-- KIT -->
           
               <h2>Design is Problem Solving</h2>
               <img src="img/tm.png" alt="" class="pull-left">
@@ -212,7 +209,7 @@
             
         </section>
 
-        <section class="experience expressionengine"> <!-- SGA site // expression engine-->
+        <section id="box9" class="experience expressionengine"> <!-- SGA site // expression engine-->
           
               <h2>Expression Engine: A better CMS for SGA</h2>
               <img src="img/sga.png" alt="SGA" class="pull-left">
@@ -224,7 +221,7 @@
 
       <div class="year"><h3>2013</h3></div>
 
-        <section class="experience"> <!-- leaving TM & getting married -->
+        <section id="box10" class="experience"> <!-- leaving TM & getting married -->
           
               <h2>Leaving TechMuscle and Getting Married</h2>
               <img src="img/married.jpg" alt="" class="pull-left">
@@ -238,7 +235,7 @@
 
       <div class="year rails github"><h3>2014</h3></div>
 
-        <section class="experience rails github"> <!-- RAILS -->
+        <section id="box11" class="experience rails github"> <!-- RAILS -->
           
               <h2>Programming is fun with Ruby!</h2>
               <img src="img/rails.png" alt="RoR" class="pull-left">
@@ -253,7 +250,6 @@
 
       <div class="spacer s50p"></div>
 
-    </div> <!-- #wrapperInner -->
   </div><!-- #wrapper -->
 </body>
 </html>
