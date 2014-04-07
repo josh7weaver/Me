@@ -14,7 +14,7 @@ $(document).ready(function($) {
 create_scroll_scene = function (event)
 {
     // Set variables
-    var sceneLength = $(window).height()/1.75;
+    var sceneLength = $(window).height()/1.25;
     var sceneLengthLonger = $(window).height();
 
     /*

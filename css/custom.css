@@ -31,8 +31,9 @@ div#background-image{ /* ONLY NEED THIS IF IMG IS TRANSPARENT*/
 	z-index: -10;
 	/*background-color: rgba(0,0,0,.1);*/
 }
-.relative{
-	position: relative;
+a,
+a:hover{
+	color: #FCA4A4;;
 }
 
 /*
@@ -125,12 +126,16 @@ h4{
 	font-size: 22px;
 	line-height: 35px;
 }
+
 /*
 	CONTENT
 */
-
+ul{
+	overflow: hidden;
+}
 #wrapper img{
-	margin-right: 15px;
+	margin-right: 20px;
+	margin-bottom: 10px;
 }
 
 #wrapper h2{
@@ -162,6 +167,12 @@ content {
 	width: 60%;
 	margin: 0 auto;
 }
+img#sga.img-thumbnail{
+	background-color: #104AB3;
+}
+.addPadding.img-thumbnail{
+	padding:10px;
+}
 
 /*
 	LAYOUT
@@ -174,6 +185,9 @@ content {
 }
 .bold{
 	font-weight: bold;
+}
+.relative{
+	position: relative;
 }
 
 /*
