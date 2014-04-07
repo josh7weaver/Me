@@ -65,7 +65,7 @@ create_scroll_scene = function (event)
             new ScrollScene({
                 triggerElement: ID,
                 duration: sceneLengthLonger,
-                offset: ( $(ID).height()/2 ) + 25
+                offset: ( $(ID).height()/2 )- 80
             })
             .setPin(ID)
             .addTo( controller );

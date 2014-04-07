@@ -75,7 +75,8 @@ $(document).ready(function($) {
 		//console.log("hitting animate. Height is: " + $('#info').height())
 		$('#info').animate({
 			height: "toggle",
-			opacity: "toggle"
+			opacity: "toggle",
+			margin: "toggle"
 		}, 800);
 	});
 

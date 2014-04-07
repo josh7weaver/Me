@@ -33,7 +33,7 @@ div#background-image{ /* ONLY NEED THIS IF IMG IS TRANSPARENT*/
 }
 a,
 a:hover{
-	color: #FCA4A4;;
+	color: #FCA4A4;
 }
 
 /*
@@ -126,6 +126,13 @@ h4{
 	font-size: 22px;
 	line-height: 35px;
 }
+.title{
+	width: 50%;
+	margin: 0 auto;
+	font-style: italic;
+	font-size: 20px;
+	line-height: 30px;
+}
 
 /*
 	CONTENT
@@ -155,6 +162,7 @@ content {
 }
 #filterHeader{
 	cursor: pointer;
+	color: #FCA4A4;
 }
 #filterList,
 #filterHelperMessage{
@@ -176,6 +184,13 @@ img#sga.img-thumbnail{
 }
 .addPadding.img-thumbnail{
 	padding:10px;
+}
+#info{
+	margin-bottom: 100px;
+}
+#downArrow{
+	margin-top: 50%;
+	opacity: .7;
 }
 
 /*
