@@ -71,7 +71,8 @@ div#background-image{ /* ONLY NEED THIS IF IMG IS TRANSPARENT*/
 	SECIONS
 */
 .experience,
-.year
+.year,
+.title
 {
 	margin: 0 auto;
 	width: 75%;
@@ -101,8 +102,13 @@ h2{
 h3{
 	font-size: 30px;
 }
+h4{
+	margin: 0;
+	padding: 10px 0;
+}
 .experience,
-.year span{
+.year span,
+.title{
 	font-family: 'Merriweather', serif;;
     font-size: 15px;
 	line-height: 20px;
@@ -114,6 +120,10 @@ h3{
 	font-size: 20px;
     line-height: 28px;
     font-weight: bold;
+}
+.title blockquote{
+	font-size: 22px;
+	line-height: 35px;
 }
 /*
 	CONTENT

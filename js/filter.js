@@ -16,8 +16,19 @@ $(document).ready(function($) {
 	/*
 		CLICK LISTENERS FOR FILTER
 	*/
+
+	// CLICKING the LINKS
 	$('#filterList').click(function(event){
 
+		// fix active state
+		$('#filterList li').removeClass('active');
+		$(event.target).addClass('active');
+
+		// ReInitialize Scenes
+		create_scroll_scene(event);
+
+
+		// HIDE / SHOW the experiences
 		var element_class_to_show = $(event.target).data("class");
 
 		if(element_class_to_show) //if they didn't click SHOW ALL
@@ -28,11 +39,20 @@ $(document).ready(function($) {
 		else	// clicked SHOW ALL, so show everything
 		{ 
 			$('.experience, .year, .title').show();
+			var url = window.location.href;
+			if(window.location.hash)
+				url = url.split('#')[0];
+			window.location.href = url + "#showFilter";
 		}
+
 	});
 
+	// HEADER
 	$('#filterHeader').click(function(event) {
 		
+		//unset the hover class
+		$(this).removeClass("hover");
+
 		// SHOW/HIDE the filters
 		if($('#filterList').is(':visible'))	// its visible, so HIDE it
 		{
@@ -58,7 +78,7 @@ $(document).ready(function($) {
 		}, 800);
 	});
 
-
+	// HOVER over LINKS
 	$("#filterList li, #filterHeader").hover(function() {
 		/* Stuff to do when the mouse enters the element */
 		$(this).addClass("hover");
@@ -66,4 +86,13 @@ $(document).ready(function($) {
 		/* Stuff to do when the mouse leaves the element */
 		$(this).removeClass("hover");
 	});
+
+
+	// GET paramater showFilter
+	if (window.location.hash){
+      var hash = window.location.hash.substring(1);
+      if (hash == "showFilter"){
+         $('#filterHeader').click();
+      }
+   }
 });
