@@ -190,7 +190,12 @@ img#sga.img-thumbnail{
 }
 #downArrow{
 	margin-top: 50%;
+	font-size: 11px;
 	opacity: .7;
+	font-style: normal;
+}
+#downArrow span{
+	font-size: 20px;
 }
 
 /*
