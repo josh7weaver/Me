@@ -64,7 +64,7 @@ create_scroll_scene = function (event)
         if(ID == "#box0"){
             new ScrollScene({
                 triggerElement: ID,
-                duration: sceneLengthLonger,
+                duration: sceneLength,
                 offset: ( $(ID).height()/2 )- 80
             })
             .setPin(ID)
