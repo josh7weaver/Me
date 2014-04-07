@@ -162,7 +162,7 @@ content {
 }
 #filterHeader{
 	cursor: pointer;
-	color: #FCA4A4;
+	/*color: #FCA4A4;*/
 }
 #filterList,
 #filterHelperMessage{
