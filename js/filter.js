@@ -5,11 +5,12 @@ $(document).ready(function($) {
 	*/
 	$(window).resize(function(event) {
       // Show warning message if viewport is too small
-      if($(window).width() < 800){
+      if($(window).width() < 1000){
         $('#message').removeClass('hide')
       }else{
         $('#message').addClass('hide')
       }
+      console.log("window resized to: " + $(window).width());
     }).resize(); //last .resize is to trigger the event on page load once
 
 
